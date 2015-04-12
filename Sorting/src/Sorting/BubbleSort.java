@@ -1,4 +1,5 @@
 package Sorting;
+
 public class BubbleSort {
 	/**
 	 * bubbleSort				sorts an array of integers using bubble sort
@@ -8,7 +9,20 @@ public class BubbleSort {
 	 */
 	public static int[] bubbleSort(int[] unsortedArray) {
 		//TODO: S1 implements bubble sort
-		
-		return null;
-	}
+		int idx;
+     	boolean flag = true;   
+     	int temp;  
+
+     	while (flag) {
+            flag = false;    
+            for (idx = 0;  idx < num.length -1;  idx++){
+                if (num[idx] < num[idx+1]) {
+                    temp = num[idx];            
+                    num[idx] = num[idx+1];
+                    num[idx+1] = temp;
+                    flag = true;           
+                }
+            }
+      } 
+  }
 }
